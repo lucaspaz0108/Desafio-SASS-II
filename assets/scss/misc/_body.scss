@@ -1,0 +1,72 @@
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+}
+
+
+#banner{
+    margin: 2rem;
+}
+
+.span_ofertas{
+    font-size: 2rem;
+}
+
+.card_margin{
+    margin-top: 4rem;
+}
+.card_size{
+    width: 100%;
+    height: 45vw;
+    object-fit: cover;
+}
+.button{
+    background-color: pink;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+#logo_size{
+    height: 14rem;
+    width: auto;
+}
+
+@media (max-width:576px) {
+    .card-text{font-size: 0.7rem;}
+}
+
+@media (max-width:576px) {
+    .card-title{font-size: 0.9rem;}
+}
+
+.boton_default{
+    width: 5rem;
+    text-align: center;
+    padding: 0.4rem 0;
+    margin: 0.5rem auto;
+    border-radius: 0.7rem;
+    color: white;
+}
+
+.boton_success {
+    @extend %btn;
+    background-color: rgb(4, 212, 4)
+}
+
+.boton_alerta {
+    @extend %btn;
+    background-color: #FF8516;
+}
+
+.boton_cancelar {
+    @extend %btn;
+    background-color: #D61E20;
+}
